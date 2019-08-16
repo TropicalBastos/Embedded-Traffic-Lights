@@ -14,7 +14,7 @@ int main(void)
         switch_on(_RED);
         _delay_ms(_RUN_TIME);
 
-        // red to amber already delays for us due to being a duo light emitter
+        // red to amber already delays for us due to being a dual light emitter
         red_to_amber();
         amber_to_green();
         
