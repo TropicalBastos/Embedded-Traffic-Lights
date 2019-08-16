@@ -7,7 +7,6 @@ HEX_TARGET=led.hex
 
 build: led.elf
 	${OBJCOPY} -O ihex ${TARGET} ${HEX_TARGET}
-	rm lights.o main.o led.elf
 
 led.elf: main.o lights.o
 	${COMPILER} -g ${MCU} -o ${TARGET} main.o lights.o
@@ -21,7 +20,7 @@ lights.o:
 .PHONY: clean
 
 clean:
-	rm led.hex main.o lights.o led.elf
+	rm main.o lights.o led.elf
 
 .PHONY: upload
 
