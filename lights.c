@@ -15,7 +15,7 @@ void switch_off(uint8_t light)
 
 void switch_on(uint8_t light)
 {
-    PORTB = PORTB | light;
+    PORTB |= light;
 }
 
 void red_to_amber()
