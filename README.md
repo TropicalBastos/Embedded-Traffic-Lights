@@ -12,7 +12,7 @@ Built for the atmega328p chip, though can be built and uploaded to an Arduino as
 
 4. Run `make clean` to remove the compiled object code that has already been linked into the .hex binary
 
-5. Changed the environment variables present in `upload.sh` to match your configuration
+5. Change the environment variables present in `upload.sh` to match your configuration
 
 6. Run `sh upload.sh` to upload to your chip connected via USB
 
