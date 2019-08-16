@@ -11,13 +11,19 @@ int main(void)
     DDRB = _PIN_12 | _PIN_11 | _PIN_10;
     while(1)
     {
-        // LED on
         switch_on(_RED);
-        _delay_ms(500);
- 
-        //LED off
-        switch_off(_RED);
-        _delay_ms(500);
+        _delay_ms(_RUN_TIME);
+
+        // red to amber already delays for us due to being a duo light emitter
+        red_to_amber();
+        amber_to_green();
+        
+        _delay_ms(_RUN_TIME);
+
+        green_to_amber();
+        _delay_ms(_DELAY_TIME);
+
+        amber_to_red();
     }
 
     return 0;

@@ -21,5 +21,6 @@ void red_to_amber();
 void amber_to_green();
 void green_to_amber();
 void amber_to_red();
+void light_to_light(uint8_t light1, uint8_t light2);
 
 #endif // LIGHTS_H
