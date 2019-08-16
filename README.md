@@ -22,4 +22,4 @@ Built for the atmega328p chip, though can be built and uploaded to an Arduino as
 - The amber LED to pin 17 (or digital pin 11)
 - The green LED to pin 16 (or digital pin 10)
 
-8. Don't forget the jump wire back to ground to complete the circuit
+8. Don't forget the jump wire back to ground to complete the circuit and add in appropriate resistors.
