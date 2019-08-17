@@ -21,5 +21,7 @@ Built for the atmega328p chip, though can be built and uploaded to an Arduino as
 - The red LED to pin 18 (or digital pin 12)
 - The amber LED to pin 17 (or digital pin 11)
 - The green LED to pin 16 (or digital pin 10)
+- 3.3V connected to one side of the push button
+- The other side of the push button connected to pin 11 (or digital pin 5)
 
 8. Don't forget the jump wire back to ground to complete the circuit and add in appropriate resistors.
